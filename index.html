@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IamNotDaniil — профиль / визитка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="layout">
+        <section class="left_panel">
+            <header class="top_nav">
+                <a href="#">All episode</a>
+                <a href="#about" class="active">Character</a>
+                <a href="#projects">Trailer</a>
+            </header>
+
+            <h1 class="brand">IAMNOTDANIIL</h1>
+            <p class="subtitle">Личный сайт-визитка и актуальные проекты с GitHub.</p>
+
+            <div class="cta_row">
+                <button id="refresh_projects" type="button">▶ Обновить проекты</button>
+            </div>
+
+            <section id="projects" class="info_block">
+                <h2>PROJECTS</h2>
+                <p class="meta">GitHub: <span id="github_username">IamNotDaniil</span></p>
+                <ul id="projects_list" class="projects_list"></ul>
+                <p id="projects_status" class="status" aria-live="polite"></p>
+            </section>
+
+            <section id="about" class="info_block">
+                <h2>ABOUT</h2>
+                <p>Я разработчик, публикую проекты и собираю портфолио в GitHub.</p>
+                <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
+            </section>
+        </section>
+
+        <aside class="right_panel">
+            <div class="nameplate">IAMNOTDANIIL</div>
+            <img src="profile-photo.jpg" alt="Фото IamNotDaniil" class="profile_photo">
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
