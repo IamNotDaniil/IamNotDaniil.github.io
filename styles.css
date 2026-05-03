@@ -1,0 +1,69 @@
+:root {
+    --bg: #0b0f14;
+    --text: #d9e2f0;
+    --muted: #94a7c6;
+    --line: #1c2635;
+    --green: #8ee082;
+    --blue: #7ab5ff;
+    --yellow: #f4d06f;
+    --red: #ff7b72;
+    --accent: #e8deca;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "JetBrains Mono", monospace;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.output {
+    padding: 1rem;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+.line { margin: .2rem 0; }
+.info { color: var(--muted); }
+.ok { color: var(--green); }
+.warn { color: var(--yellow); }
+.err { color: var(--red); }
+.link { color: var(--blue); text-decoration: underline; }
+
+.prompt {
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    gap: .45rem;
+    align-items: center;
+    padding: .65rem .8rem;
+    background: #0f1722;
+}
+
+.user { color: var(--green); }
+.path { color: var(--blue); }
+.sign { color: var(--yellow); }
+
+.prompt input {
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+}
+
+.boot_overlay { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; background: rgba(9, 7, 6, 0.94); transition: opacity 0.6s ease; }
+.boot_overlay.hide { opacity: 0; }
+.boot_panel { width: min(560px, 88vw); border: 1px solid var(--line); background: #0b0907; padding: 1rem; box-shadow: 0 0 32px rgba(232, 222, 202, 0.08); }
+.boot_title { margin-top: 0; letter-spacing: 0.12em; }
+.progress { height: 8px; margin-top: 0.8rem; border: 1px solid var(--line); }
+.progress span { display: block; width: 0; height: 100%; background: linear-gradient(90deg, #7d745f, var(--accent)); }
