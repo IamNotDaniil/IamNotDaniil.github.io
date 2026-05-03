@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: radial-gradient(circle at top left, #192f54 0%, var(--bg) 48%);
+    background: radial-gradient(circle at top left, #000000 0%, var(--bg) 48%);
     color: var(--text);
 }
 
@@ -171,7 +171,7 @@ img {
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 22px 40px rgba(0, 0, 0, 0.34);
-    border-color: #2c4f83;
+    border-color: #9C4F83;
 }
 
 .projects_list li {
