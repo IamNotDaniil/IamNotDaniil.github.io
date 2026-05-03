@@ -21,14 +21,22 @@ function print_repo_list() {
     repos.forEach((repo) => print_line(`- ${repo.textContent} :: ${repo.href}`, 'link'));
 }
 
+function print_about() {
+    print_line('IamNotDaniil profile:', 'ok');
+    print_line('- Developer');
+    print_line('- Stack: C++, Python, SFML');
+    print_line('- Focus: automation, bots, parsers, scripts');
+    print_line('- Also builds web/e-commerce projects');
+}
+
 function print_help() {
     print_line('Available commands:', 'ok');
-    print_line('/help       - show commands');
-    print_line('/myrepos    - list repos from GitHub cache');
+    print_line('/help       - show commands list');
+    print_line('/about      - info about IamNotDaniil');
+    print_line('/myrepos    - list GitHub repos');
     print_line('/sync       - sync repos from GitHub API');
-    print_line('/about      - short bio');
-    print_line('/contacts   - contact links');
-    print_line('/stats      - quick stats links');
+    print_line('/contacts   - telegram + email');
+    print_line('/stats      - profile links');
     print_line('/clear      - clear terminal output');
 }
 
@@ -36,6 +44,9 @@ async function run_command(command) {
     switch (command) {
         case '/help':
             print_help();
+            break;
+        case '/about':
+            print_about();
             break;
         case '/myrepos':
             print_repo_list();
@@ -45,16 +56,12 @@ async function run_command(command) {
             await load_projects();
             print_line('Sync done.', 'ok');
             break;
-        case '/about':
-            print_line('ĐØ₵₮ØⱤ ⱧɆ₦₮₳ł | C++ / Python / SFML | Automation developer.');
-            break;
         case '/contacts':
             print_line('Telegram: @IamNotDaniil');
             print_line('Email: friday2night2funking@gmail.com');
             break;
         case '/stats':
-            print_line('https://github.com/IamNotDaniil', 'link');
-            print_line('https://github-readme-stats.vercel.app/api?username=IamNotDaniil', 'link');
+            print_line('GitHub: https://github.com/IamNotDaniil', 'link');
             break;
         case '/clear':
             terminal_output.innerHTML = '';
@@ -68,11 +75,13 @@ async function run_command(command) {
 terminal_form.addEventListener('submit', async (event) => {
     event.preventDefault();
     const command = terminal_input.value.trim();
-    if (!command) return;
-    print_line(`doctor@yorha ~/portfolio ❯ ${command}`);
+    if (!command) {
+        return;
+    }
+
+    print_line(`IamNotDaniil@terminal ~/profile ❯ ${command}`);
     terminal_input.value = '';
     await run_command(command);
 });
 
-print_line('Welcome to Oh-My-Zsh Portfolio Terminal', 'ok');
-print_line('Type /help to start.', 'info');
+print_line('Terminal ready. Type /help', 'ok');

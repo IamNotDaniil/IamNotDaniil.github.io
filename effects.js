@@ -3,7 +3,7 @@ boot_overlay.className = 'boot_overlay';
 boot_overlay.innerHTML = `
     <div class="boot_panel">
         <p class="boot_title">LOADING...BOOTING SYSTEM...</p>
-        <p>Initializing YoRHa terminal...</p>
+        <p>Initializing terminal session...</p>
         <div class="progress"><span id="boot_bar"></span></div>
     </div>
 `;
