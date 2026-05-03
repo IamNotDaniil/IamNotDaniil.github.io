@@ -1,0 +1,54 @@
+:root {
+    --bg: #bdbdbd;
+    --card: #efefef;
+    --ink: #0c0c0c;
+    --muted: #666;
+    --line: #d8d8d8;
+    --blue: #5fb8ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: radial-gradient(circle at top, #d0d0d0 0%, #b2b2b2 100%);
+    color: var(--ink);
+}
+
+.container {
+    width: min(1080px, 95vw);
+    margin: 2rem auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+}
+
+.hero_shell { padding: 1.2rem; }
+.hero_top { display:flex; justify-content:space-between; font-size:.72rem; letter-spacing:.08em; }
+.hero_main { display:grid; grid-template-columns: 1fr 1.2fr; gap:1rem; align-items:end; min-height:220px; }
+.micro { font-size:.7rem; letter-spacing:.2em; margin-top:2rem; color:var(--muted);} 
+.lab_title { font-size: clamp(3.5rem, 10vw, 6rem); margin: .2rem 0; line-height: .9; }
+.vertical { writing-mode: vertical-rl; transform: rotate(180deg); font-weight:900; font-size:2.4rem; margin:0; }
+.hero_block { min-height: 220px; background: linear-gradient(160deg,#d0d0d0,#a8a8a8); border-radius: 4px; }
+
+.hero h1 { margin: 0.2rem 0; font-size: clamp(1.9rem, 4.6vw, 3.4rem); }
+.nickname,.meta,.status,li,p { color: #303030; }
+h2 { margin: 0 0 0.7rem; color: var(--ink);} a { color: #0f5fa0; }
+.stats_grid { display:grid; gap:.8rem;} .two_cols { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.one_col { grid-template-columns:1fr; }
+img { width:100%; border-radius: 8px; border:1px solid #cacaca; background:#fff; }
+.projects_head { display:flex; justify-content:space-between; align-items:center; }
+button { background:#111; color:#fff; border:0; border-radius:999px; padding:.45rem .85rem; font-weight:700; cursor:pointer; }
+button:disabled { opacity:.65; }
+.projects_list { list-style:none; margin:.5rem 0; padding:0; display:grid; gap:.5rem; }
+.projects_list li { border:1px solid #ccc; border-radius:10px; padding:.65rem; background:#fff; }
+.fun_fact p { font-style:italic; color:#222; }
+@media (max-width:860px){ .two_cols{grid-template-columns:1fr;} .hero_main{grid-template-columns:1fr;} }
