@@ -3,70 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAMNOTDANIIL — Developer Portfolio</title>
+    <title>YoRHa Terminal // IamNotDaniil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="wrap">
-        <div class="fx fx_one"></div>
-        <div class="fx fx_two"></div>
-        <section class="hero animate_in">
-            <p class="badge">IAMNOTDANIIL • PORTFOLIO</p>
-            <h1>IAMNOTDANIIL</h1>
-            <p class="subtitle">💻 Developer | ⚡ Automation | 🎯 Clean & efficient code</p>
+    <div class="noise"></div>
+    <main class="terminal">
+        <header class="boot_line">LOADING...BOOTING SYSTEM...</header>
+
+        <section class="menu_block">
+            <p class="menu_item active">Operator: IamNotDaniil</p>
+            <p class="menu_item">Mode: Portfolio Access</p>
+            <p class="menu_item">Channel: GitHub Sync</p>
+            <p class="menu_item">Status: Online</p>
         </section>
 
-        <section class="panel two">
-            <article class="card animate_in">
-                <h2>🚀 About Me</h2>
+        <section class="title_block">
+            <h1>YoRHa / ĐØ₵₮ØⱤ ⱧɆ₦₮₳ł</h1>
+            <p>for the Glory of Clean Code</p>
+        </section>
+
+        <section class="grid">
+            <article class="panel">
+                <h2>ABOUT</h2>
                 <ul>
-                <li>🔧 C++, Python, SFML</li>
-                <li>🤖 Bots, parsers, scripts</li>
-                <li>🌐 Websites & e-commerce</li>
-                <li>🎮 2D game development</li>
-                <li>☕ Java (Spring/Android)</li>
-                <li>🎨 Frontend: React, Vue, Tailwind</li>
-                <li>⚙️ .dotfiles & terminal setup (Neovim, Zsh, Tmux)</li>
-                <li>🐳 Docker & CI/CD basics</li>
-                <li>🗄️ SQL, PostgreSQL, SQLite</li>
-                <li>📜 Bash/PowerShell automation</li>
+                    <li>C++, Python, SFML</li>
+                    <li>Automation / Bots / Parsers</li>
+                    <li>Web + e-commerce</li>
+                    <li>2D game development</li>
                 </ul>
             </article>
 
-            <article class="card animate_in" id="projects">
+            <article class="panel" id="projects">
                 <div class="row">
-                    <h2>🔥 Live Projects</h2>
-                    <button id="refresh_projects" type="button">Обновить</button>
+                    <h2>PROJECT LIST</h2>
+                    <button id="refresh_projects" type="button">SYNC</button>
                 </div>
-                <p class="muted">Username: <span id="github_username">IamNotDaniil</span></p>
+                <p class="hint">User: <span id="github_username">IamNotDaniil</span></p>
                 <ul id="projects_list" class="projects_list"></ul>
-                <p id="projects_status" class="muted" aria-live="polite"></p>
+                <p id="projects_status" class="hint" aria-live="polite"></p>
             </article>
-        </section>
 
-        <section class="panel two">
-            <article class="card animate_in">
-                <h2>📊 GitHub Stats</h2>
+            <article class="panel">
+                <h2>GITHUB STATS</h2>
                 <img src="https://github-readme-stats.vercel.app/api?username=IamNotDaniil&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats">
             </article>
-            <article class="card animate_in">
-                <h2>📈 Most Used Languages</h2>
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IamNotDaniil&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages">
-            </article>
-        </section>
 
-        <section class="panel two">
-            <article class="card animate_in">
-                <h2>🏆 Achievements</h2>
-                <img src="https://github-profile-trophy.vercel.app/?username=IamNotDaniil&theme=tokyonight&no-frame=true&row=1&column=3" alt="Achievements">
-            </article>
-            <article class="card animate_in">
-                <h2>📫 Contact</h2>
+            <article class="panel">
+                <h2>CONTACT</h2>
                 <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
                 <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
             </article>
         </section>
+
+        <footer class="cmd_line">enter: sync, 'e': options, 'c': cmd-line</footer>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
