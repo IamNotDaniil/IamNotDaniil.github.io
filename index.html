@@ -9,7 +9,7 @@
 <body>
     <div class="noise"></div>
     <main class="terminal">
-        <header class="boot_line">LOADING...BOOTING SYSTEM...</header>
+        <header class="boot_line" data-full-text="LOADING...BOOTING SYSTEM...">LOADING...BOOTING SYSTEM...</header>
 
         <section class="menu_block">
             <p class="menu_item active">Operator: IamNotDaniil</p>
@@ -24,6 +24,18 @@
         </section>
 
         <section class="grid">
+
+        <section class="panel" id="command_terminal">
+            <h2>COMMAND TERMINAL</h2>
+            <p class="hint">Доступные команды: /help /myrepos /about /contacts /stats /sync /clear</p>
+            <div id="terminal_output" class="terminal_output"></div>
+            <form id="terminal_form" class="terminal_form" autocomplete="off">
+                <span>&gt;</span>
+                <input id="terminal_input" type="text" placeholder="Введите команду..." />
+                <button type="submit">RUN</button>
+            </form>
+        </section>
+
             <article class="panel">
                 <h2>ABOUT</h2>
                 <ul>
@@ -60,5 +72,7 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="effects.js"></script>
+    <script src="terminal.js"></script>
 </body>
 </html>
