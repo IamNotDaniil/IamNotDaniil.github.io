@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh-My-Zsh Terminal // IamNotDaniil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="shell">
+        <header class="top_bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <p class="title">~/.oh-my-zsh :: interactive portfolio shell</p>
+        </header>
+
+        <section id="terminal_output" class="output"></section>
+
+        <form id="terminal_form" class="prompt" autocomplete="off">
+            <span class="user">doctor@yorha</span>
+            <span class="path">~/portfolio</span>
+            <span class="sign">❯</span>
+            <input id="terminal_input" type="text" autofocus placeholder="type /help" />
+            <button type="submit">run</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="terminal.js"></script>
+</body>
+</html>
