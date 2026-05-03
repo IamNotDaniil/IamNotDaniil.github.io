@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal // IamNotDaniil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="shell">
+        <header class="top_bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <p class="title">~/.oh-my-zsh :: IamNotDaniil terminal</p>
+        </header>
+
+        <section id="terminal_output" class="output"></section>
+
+        <form id="terminal_form" class="prompt" autocomplete="off">
+            <span class="user">IamNotDaniil@terminal</span>
+            <span class="path">~/profile</span>
+            <span class="sign">❯</span>
+            <input id="terminal_input" type="text" autofocus placeholder="type /help" />
+            <button type="submit">run</button>
+        </form>
+    </main>
+
+    <ul id="projects_list" hidden></ul>
+    <p id="projects_status" hidden></p>
+    <button id="refresh_projects" hidden type="button">sync</button>
+
+    <script src="script.js"></script>
+    <script src="terminal.js"></script>
+    <script src="effects.js"></script>
+</body>
+</html>
