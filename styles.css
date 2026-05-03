@@ -1,0 +1,89 @@
+:root {
+    --bg: #090f1f;
+    --card: #10182d;
+    --line: #1d2c4f;
+    --text: #e8f0ff;
+    --muted: #8ca4d8;
+    --accent: #49b6ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 20% 0%, #1c2d52, transparent 45%),
+                radial-gradient(circle at 90% 10%, #132848, transparent 30%);
+    z-index: -1;
+}
+
+.page {
+    width: min(1080px, 94vw);
+    margin: 2rem auto;
+}
+
+.card {
+    background: linear-gradient(170deg, #10182d, #0d1425);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.hero h1 { margin: .25rem 0; font-size: clamp(2rem, 5vw, 3.4rem); }
+.kicker { color: var(--accent); letter-spacing: .08em; font-size: .78rem; }
+.lead { color: var(--muted); margin-bottom: 1rem; }
+.actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+
+.btn {
+    text-decoration: none;
+    background: var(--accent);
+    color: #03101f;
+    font-weight: 700;
+    padding: .5rem .9rem;
+    border-radius: 999px;
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--line);
+}
+
+.grid {
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+h2 { margin-top: 0; }
+ul { margin: 0; padding-left: 1.2rem; }
+li, .muted, p { color: var(--muted); }
+a { color: var(--accent); }
+
+.head_row { display: flex; justify-content: space-between; align-items: center; gap: .5rem; }
+
+button {
+    background: var(--accent);
+    color: #041326;
+    border: 0;
+    border-radius: 999px;
+    padding: .45rem .8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:disabled { opacity: .65; }
+
+.projects { list-style: none; padding: 0; margin: .6rem 0; display: grid; gap: .45rem; }
+.projects li { border: 1px solid var(--line); border-radius: 10px; padding: .6rem; background: #0c1528; }
+.stats img { width: 100%; border: 1px solid var(--line); border-radius: 10px; margin-top: .45rem; }
+
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
