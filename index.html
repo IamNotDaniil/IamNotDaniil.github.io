@@ -3,76 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YoRHa Terminal // IamNotDaniil</title>
+    <title>Oh-My-Zsh Terminal // IamNotDaniil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="noise"></div>
-    <main class="terminal">
-        <header class="boot_line" data-full-text="LOADING...BOOTING SYSTEM...">LOADING...BOOTING SYSTEM...</header>
+    <main class="shell">
+        <header class="top_bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <p class="title">~/.oh-my-zsh :: interactive portfolio shell</p>
+        </header>
 
-        <section class="menu_block">
-            <p class="menu_item active">Operator: IamNotDaniil</p>
-            <p class="menu_item">Mode: Portfolio Access</p>
-            <p class="menu_item">Channel: GitHub Sync</p>
-            <p class="menu_item">Status: Online</p>
-        </section>
+        <section id="terminal_output" class="output"></section>
 
-        <section class="title_block">
-            <h1>YoRHa / ĐØ₵₮ØⱤ ⱧɆ₦₮₳ł</h1>
-            <p>for the Glory of Clean Code</p>
-        </section>
-
-        <section class="grid">
-
-        <section class="panel" id="command_terminal">
-            <h2>COMMAND TERMINAL</h2>
-            <p class="hint">Доступные команды: /help /myrepos /about /contacts /stats /sync /clear</p>
-            <div id="terminal_output" class="terminal_output"></div>
-            <form id="terminal_form" class="terminal_form" autocomplete="off">
-                <span>&gt;</span>
-                <input id="terminal_input" type="text" placeholder="Введите команду..." />
-                <button type="submit">RUN</button>
-            </form>
-        </section>
-
-            <article class="panel">
-                <h2>ABOUT</h2>
-                <ul>
-                    <li>C++, Python, SFML</li>
-                    <li>Automation / Bots / Parsers</li>
-                    <li>Web + e-commerce</li>
-                    <li>2D game development</li>
-                </ul>
-            </article>
-
-            <article class="panel" id="projects">
-                <div class="row">
-                    <h2>PROJECT LIST</h2>
-                    <button id="refresh_projects" type="button">SYNC</button>
-                </div>
-                <p class="hint">User: <span id="github_username">IamNotDaniil</span></p>
-                <ul id="projects_list" class="projects_list"></ul>
-                <p id="projects_status" class="hint" aria-live="polite"></p>
-            </article>
-
-            <article class="panel">
-                <h2>GITHUB STATS</h2>
-                <img src="https://github-readme-stats.vercel.app/api?username=IamNotDaniil&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats">
-            </article>
-
-            <article class="panel">
-                <h2>CONTACT</h2>
-                <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
-                <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
-            </article>
-        </section>
-
-        <footer class="cmd_line">enter: sync, 'e': options, 'c': cmd-line</footer>
+        <form id="terminal_form" class="prompt" autocomplete="off">
+            <span class="user">doctor@yorha</span>
+            <span class="path">~/portfolio</span>
+            <span class="sign">❯</span>
+            <input id="terminal_input" type="text" autofocus placeholder="type /help" />
+            <button type="submit">run</button>
+        </form>
     </main>
 
     <script src="script.js"></script>
-    <script src="effects.js"></script>
     <script src="terminal.js"></script>
 </body>
 </html>
