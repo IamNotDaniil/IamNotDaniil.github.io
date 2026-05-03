@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IamNotDaniil — профиль / визитка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="stage">
+        <section class="card">
+            <header class="top_nav">
+                <span class="logo">ID</span>
+                <a href="#">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contacts">Contact</a>
+            </header>
+
+            <p class="watermark">IAMNOTDANIIL</p>
+
+            <section class="left_col">
+                <h1>IamNotDaniil</h1>
+                <p class="tagline">Published by GitHub</p>
+
+                <div class="info_block" id="projects">
+                    <div class="projects_head">
+                        <h2>Projects</h2>
+                        <button id="refresh_projects" type="button">Refresh</button>
+                    </div>
+                    <p class="meta">Username: <span id="github_username">IamNotDaniil</span></p>
+                    <ul id="projects_list" class="projects_list"></ul>
+                    <p id="projects_status" class="status" aria-live="polite"></p>
+                </div>
+
+                <div class="info_block" id="about">
+                    <h2>About</h2>
+                    <p>Разработчик. Публикую проекты и веду GitHub-портфолио.</p>
+                </div>
+
+                <div class="info_block" id="contacts">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
+                    <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
+                </div>
+            </section>
+
+            <aside class="right_col">
+                <div class="circle_marker">01</div>
+                <div class="feature feature_top">• Intelligence</div>
+                <div class="feature feature_bottom">• Complete Unpredictability</div>
+                <div class="shape"></div>
+                <div class="shape shape_2"></div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
