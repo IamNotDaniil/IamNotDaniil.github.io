@@ -7,40 +7,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="layout">
-        <section class="left_panel">
+    <main class="stage">
+        <section class="card">
             <header class="top_nav">
-                <a href="#">All episode</a>
-                <a href="#about" class="active">Character</a>
-                <a href="#projects">Trailer</a>
+                <span class="logo">ID</span>
+                <a href="#">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contacts">Contact</a>
             </header>
 
-            <h1 class="brand">IAMNOTDANIIL</h1>
-            <p class="subtitle">Личный сайт-визитка и актуальные проекты с GitHub.</p>
+            <p class="watermark">IAMNOTDANIIL</p>
 
-            <div class="cta_row">
-                <button id="refresh_projects" type="button">▶ Обновить проекты</button>
-            </div>
+            <section class="left_col">
+                <h1>IamNotDaniil</h1>
+                <p class="tagline">Published by GitHub</p>
 
-            <section id="projects" class="info_block">
-                <h2>PROJECTS</h2>
-                <p class="meta">GitHub: <span id="github_username">IamNotDaniil</span></p>
-                <ul id="projects_list" class="projects_list"></ul>
-                <p id="projects_status" class="status" aria-live="polite"></p>
+                <div class="info_block" id="projects">
+                    <div class="projects_head">
+                        <h2>Projects</h2>
+                        <button id="refresh_projects" type="button">Refresh</button>
+                    </div>
+                    <p class="meta">Username: <span id="github_username">IamNotDaniil</span></p>
+                    <ul id="projects_list" class="projects_list"></ul>
+                    <p id="projects_status" class="status" aria-live="polite"></p>
+                </div>
+
+                <div class="info_block" id="about">
+                    <h2>About</h2>
+                    <p>Разработчик. Публикую проекты и веду GitHub-портфолио.</p>
+                </div>
+
+                <div class="info_block" id="contacts">
+                    <h2>Contact</h2>
+                    <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
+                    <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
+                </div>
             </section>
 
-            <section id="about" class="info_block">
-                <h2>ABOUT</h2>
-                <p>Я разработчик, публикую проекты и собираю портфолио в GitHub.</p>
-                <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
-                <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
-            </section>
+            <aside class="right_col">
+                <div class="circle_marker">01</div>
+                <div class="feature feature_top">• Intelligence</div>
+                <div class="feature feature_bottom">• Complete Unpredictability</div>
+                <div class="shape"></div>
+                <div class="shape shape_2"></div>
+            </aside>
         </section>
-
-        <aside class="right_panel">
-            <div class="nameplate">IAMNOTDANIIL</div>
-            <img src="profile-photo.jpg" alt="Фото IamNotDaniil" class="profile_photo">
-        </aside>
     </main>
 
     <script src="script.js"></script>
