@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль / Визитка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Привет, я [Твоё имя]</h1>
+        <p>Разработчик | GitHub энтузиаст | Создаю полезные проекты</p>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#projects">Проекты</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="card">
+            <h2>Обо мне</h2>
+            <p>
+                Я занимаюсь разработкой и люблю делать понятные, полезные и красивые вещи.
+                Здесь можно коротко рассказать о навыках, интересах и целях.
+            </p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Проекты с GitHub</h2>
+            <div class="projects_toolbar">
+                <label for="github_username">GitHub username:</label>
+                <input id="github_username" type="text" value="your-username" autocomplete="off">
+                <button id="refresh_projects" type="button">Обновить проекты</button>
+            </div>
+            <p class="hint">Нажми «Обновить проекты», и список подтянется автоматически с описаниями.</p>
+            <ul id="projects_list" class="projects_list"></ul>
+            <p id="projects_status" class="status" aria-live="polite"></p>
+        </section>
+
+        <section id="contacts" class="card">
+            <h2>Контакты</h2>
+            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/your-username" target="_blank" rel="noreferrer">github.com/your-username</a></p>
+            <p>Telegram: <a href="https://t.me/your-username" target="_blank" rel="noreferrer">@your-username</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 [Твоё имя]. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
