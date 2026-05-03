@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IamNotDaniil — профиль / визитка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="layout">
+        <section class="left_panel">
+            <header class="top_nav">
+                <a href="#about">Обо мне</a>
+                <a href="#projects" class="active">Проекты</a>
+                <a href="#contacts">Контакты</a>
+            </header>
+
+            <p class="ghost_name">IAMNOTDANIIL</p>
+            <h1>IamNotDaniil</h1>
+            <p class="lead">
+                Личный сайт-визитка. Здесь мои актуальные проекты с GitHub,
+                базовая информация и контакты.
+            </p>
+
+            <section id="about" class="info_block">
+                <h2>Обо мне</h2>
+                <p>
+                    Я разработчик, публикую код и собираю портфолио. Люблю
+                    чистую структуру, понятные решения и визуально аккуратные интерфейсы.
+                </p>
+            </section>
+
+            <section id="projects" class="info_block">
+                <div class="projects_head">
+                    <h2>Мои проекты</h2>
+                    <button id="refresh_projects" type="button">Обновить</button>
+                </div>
+                <p class="meta">GitHub: <span id="github_username">IamNotDaniil</span></p>
+                <ul id="projects_list" class="projects_list"></ul>
+                <p id="projects_status" class="status" aria-live="polite"></p>
+            </section>
+
+            <section id="contacts" class="info_block">
+                <h2>Контакты</h2>
+                <p>Email: <a href="mailto:friday2night2funking@gmail.com">friday2night2funking@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/IamNotDaniil" target="_blank" rel="noreferrer">@IamNotDaniil</a></p>
+                <p>GitHub: <a href="https://github.com/IamNotDaniil" target="_blank" rel="noreferrer">github.com/IamNotDaniil</a></p>
+            </section>
+        </section>
+
+        <aside class="right_panel">
+            <div class="portrait_wrap">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Портретный стиль блока профиля">
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
